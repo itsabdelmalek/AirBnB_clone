@@ -1,231 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>AirBnB clone</title>
-    <link rel="stylesheet" href="styles/4-common.css">
-    <link rel="stylesheet" href="styles/3-header.css">
-    <link rel="stylesheet" href="styles/3-footer.css">
-    <link rel="stylesheet" href="styles/6-filters.css">
-    <link rel="stylesheet" href="styles/100-places.css">
-    <link rel="icon" href="images/icon.png">
-  </head>
+	<head>
+		<title>AirBnB clone</title>
 
-  <body>
-    <header></header>
+		<link rel="browser tab icon" href="images/icon.png" >
 
-    <div class="container">
-      <section class="filters">
-        <div class="locations">
-          <h3>States</h3>
-          <h4>California, Arizona...</h4>
-          <div class="popover">
-            <h2>Arizona:</h2>
-            <ul>
-              <li>Page</li>
-              <li>Page2</li>
-            </ul>
-            <h2>California:</h2>
-            <ul>
-              <li>San Francisco</li>
-              <li>Los Atlos</li>
-            </ul>
-          </div>
+		<link rel="stylesheet" href="styles/4-common.css"/>
+		<link rel="stylesheet" href="styles/3-header.css"/>
+		<link rel="stylesheet" href="styles/3-footer.css"/>
+		<link rel="stylesheet" href="styles/6-filters.css"/>
+		<link rel="stylesheet" href="styles/100-places.css"/>
+	</head>
+    <body>
+		<header>
+			<div id="header_logo"></div>
+		</header>
+		<div class="container">
+			<section class="filters">
+				<button>Search</button>
+				<div class="locations">
+					<h3>States</h3>
+					<h4>California, Arizona...</h4>
+					<ul class="popover">
+						<li><h2>Arizona</h2>
+							<ul>
+								<li><h4>Page</h4></li>
+								<li><h4>Page2</h4></li>
+							</ul></li>
+						<li><h2>California</h2>
+							<ul>
+								<li><h4>San Francisco</h4></li>
+								<li><h4>Los Altos</h4></li>
+							</ul></li>
+					</ul>
+				</div>
+				<div class="filter_amenities">
+					<h3>Amenities</h3>
+					<h4>Internet, Kitchen...</h4>
+					<ul class="popover">
+						<li><h4>Internet</h4></li>
+						<li><h4>TV</h4></li>
+						<li><h4>Kitchen</h4></li>
+						<li><h4>Iron</h4></li>
+					</ul>
+				</div>
 
-        </div><div class="amenities">
-          <h3>Amenities</h3>
-          <h4>Internet, Kitchen...</h4>
-          <ul class="popover">
-            <li>Internet</li>
-            <li>TV</li>
-            <li>Kitchen</li>
-            <li>Iron</li>
-          </ul>
-        </div>
-        <button>Search</button>
-      </section>
-
-      <section class="places">
-        <h1>Places</h1>
-        <article>
-          <div class="name_and_price">
-            <h2>My home</h2>
-            <div class="price_by_night">&#36;80</div>
-          </div>
-          <div class="information">
-            <div class="max_guest">
-              <div class="guest_icon"></div>
-              <br>2 Guests
-            </div>
-            <div class="number_rooms">
-              <div class="bed_icon"></div>
-              <br>1 Bedroom
-            </div>
-            <div class="number_bathrooms">
-              <div class="bath_icon"></div>
-              <br>1 Bathroom
-            </div>
-          </div>
-          <div class="user">
-            <strong>Owner:</strong> John Lennon
-          </div>
-          <div class="description">
-            This is a lovely 1 bedroom and 1 bathroom apartment that can
-            accomodate 2 people. It locates at the center of Shanghai
-            and next to subway line 1. 1 stop to People Square, 2 stops
-            to Bund, 3 stops to Jingan Temple.
-          </div>
-          <div class="amenities">
-						<h2>Amenities</h2>
-            <ul>
-              <li><div class="tv_icon"></div>TV</li>
+			</section>
+			<section class="places">
+				<h1>Places</h1>
+				<article>
+					<div class="headline">
+						<h2 class="article_title">My home</h2>
+						<div class="price_by_night">$80</div>
+					</div>
+					<div class="information">
+						<div class="max_guest">
+							<div class="guest_icon"></div>
+							<p>2 Guests</p>
+						</div>
+						<div class="number_rooms">
+							<div class="bed_icon"></div>
+							<p>1 Bedroom</p>
+						</div>
+						 <div class="number_bathrooms">
+							<div class="bath_icon"></div>
+							<p>1 Bathroom</p>
+						</div>
+					</div>
+					<div class="user"><b>Owner:</b> John Lennon</div>
+					<div class="description">
+                        This is a lovely 1 bedroom and 1 bathroom apartment that can
+						accomodate 2 people. It locates at the center of Shanghai and
+						next to subway line 1. 1 stop to People Square, 2 stops to Bund, 3 stops to Jingan Temple.
+                    </div>
+					<div class="amenities">
+						<h2 class="article_subtitle">Amenities</h2>
+						<ul>
+							<li><div class="tv_icon"></div>TV</li>
 							<li><div class="wifi_icon"></div>Wifi</li>
 							<li><div class="pet_icon"></div>Pets friendly</li>
-            </ul>
+						</ul>
 					</div>
 					<div class="reviews">
-						<h2>2 Reviews</h2>
-            <h3>From Bob Dylan the 27th January 2017</h3>
-            <ul>
-              <li>
-                <p>
-                  Runshi is an epic host. Nothing more i can say. 5 star!
-                  </p>
-                  </li>
-                </ul>
-                <h3>From Connor the 7th January 2017</h3>
-                <ul>
-                  <li>
-                    <p>
-                      Highly recommended!
-                    </p>
-                  </li>
-                </ul>
-          </div>
-        </article>
-
-        <article>
-          <div class="name_and_price">
-            <h2>Tiny House</h2>
-            <div class="price_by_night">&#36;65</div>
-          </div>
-          <div class="information">
-            <div class="max_guest">
-              <div class="guest_icon"></div>
-              <br>4 Guests
-            </div>
-            <div class="number_rooms">
-              <div class="bed_icon"></div>
-              <br>2 Bedrooms
-            </div>
-            <div class="number_bathrooms">
-              <div class="bath_icon"></div>
-              <br>1 Bathroom
-            </div>
-          </div>
-          <div class="user"><strong>Owner:</strong> Adrienne </div>
-          <div class="description">
-            Our place is a private, affordable stand-alone guest house
-            centrally located just minutes to French Quarters, downtown,
-            the Fair Grounds (Jazz Fest) and City Park. The guest house is
-            a quaint, 400 square ft. with a full bath, mini kitchen, & living
-            room. The extra high ceilings make the home feel more
-            spacious. The sofa converts to a bed also. We have a hand
-            made counter area that adds character to the room and a
-            great porch/deck to relax on and have a glass of Merlot.
-          </div>
-          <div class="amenities">
-            <h2>Amenities</h2>
-            <ul>
-                <li><div class="pet_icon"></div>Pets friendly</li>
-            </ul>
-          </div>
-          <div class="reviews">
-            <h2>1 Review</h2>
-            <h3>From Max the 27th January 2017</h3>
-            <ul>
-              <li>
-                <p>
-                  Fantastic place. It was clean, Adrienne was great (even though we did not meet in person) and everything went super smooth.
-                  Location is also great if you like running and something a bit more quiet.
-                  I would suggest a car or take into consideration that you might have to Uber into the city From
-                  the location. Overall, would recommend the place anytime
-                </p>
-              </li>
-            </ul>
-          </div>
-        </article>
-
-        <article>
-          <div class="name_and_price">
-            <h2>A Suite</h2>
-            <div class="price_by_night">&#36;190</div>
-          </div>
-          <div class="information">
-            <div class="max_guest">
-              <div class="guest_icon"></div>
-              <br>5 Guests
-            </div>
-            <div class="number_rooms">
-              <div class="bed_icon"></div>
-              <br>3 Bedrooms
-            </div>
-            <div class="number_bathrooms">
-              <div class="bath_icon"></div>
-              <br>2 Bathrooms
-            </div>
-          </div>
-          <div class="user">
-            <strong>Owner:</strong> Betty &#38; John
-          </div>
-          <div class="description">
-            Discover comfort and convenience in our charming suite
-            featuring 3 bedrooms and 2 bathrooms. Unwind in the tastefully 
-            designed living space, enjoy meals prepared in the modern kitchen,
-            and retreat to well-appointed bedrooms for restful nights.
-            Two sleek bathrooms add to the ease of your stay.
-            Located centrally, our suite is your gateway to local attractions
-            and dining. Experience a memorable getaway with us.
-          </div>
-          <div class="amenities">
-            <h2>Amenities</h2>
-            <ul>
-              <li><div class="tv_icon"></div>TV</li>
+						<h2 class="article_subtitle">2 Reviews</h2>
+						<ul>
+							<li>
+								<div class="review_item">
+									<h3>From Bob Dylan the 27th January 2017</h3>
+									<p class="review_text">John is an epic host. Nothing more i can say. 5 stars!</p>
+								</div>
+							</li>
+							<li>
+								<div class="review_item">
+									<h3>From Connor the 4th January 2017</h3>
+									<p class="review_text">Highly recommended!</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</article>
+				<article>
+					<div class="headline">
+						<h2 class="article_title">Tiny house</h2>
+						<div class="price_by_night">$65</div>
+					</div>
+					<div class="information">
+                        <div class="max_guest">
+                            <div class="guest_icon"></div>
+                            <p>4 Guests</p>
+                        </div>
+                        <div class="number_rooms">
+                            <div class="bed_icon"></div>
+                            <p>2 Bedrooms</p>
+                        </div>
+                         <div class="number_bathrooms">
+                            <div class="bath_icon"></div>
+                            <p>1 Bathroom</p>
+                        </div>
+                    </div>
+					<div class="user"><b>Owner:</b> Adrienne</div>
+					<div class="description">
+						Our place is a private, affordable stand-alone guest house
+						centrally located just minutes to French Quarters, downtown,
+						the Fair Grounds (Jazz Fest) and City Park. The guest house is
+						a quaint, 400 square ft. with a full bath, mini kitchen, & living
+						room. The extra high ceilings make the home feel more
+						spacious. The sofa converts to a bed also. We have a hand
+						made counter area that adds character to the room and a
+						great porch/deck to relax on and have a glass of Merlot.
+                    </div>
+					<div class="amenities">
+                        <h2 class="article_subtitle">Amenities</h2>
+                        <ul>
+                            <li><div class="pet_icon"></div>Pets friendly</li>
+                        </ul>
+                    </div>
+                    <div class="reviews">
+                        <h2 class="article_subtitle">1 Review</h2>
+                        <ul>
+                            <li>
+								<div class="review_item">
+                                	<h3>From Max the 27th January 2017</h3>
+                                	<p class="review_text">Fantastic place. It was clean, Adrienne was great (even though we did not meet in person) and everything went super smooth.
+										Location is also great if you like running and something a bit more quiet.
+										I would suggest a car or take into consideration that you might have to Uber into the city From
+										the location. Overall, would recommend the place anytime</p>
+								</div>
+                            </li>
+                        </ul>
+                    </div>
+				</article>
+				<article>
+					<div class="headline">
+						<h2 class="article_title">A suite</h2>
+						<div class="price_by_night">$190</div>
+					</div>
+					<div class="information">
+                        <div class="max_guest">
+                            <div class="guest_icon"></div>
+                            <p>5 Guests</p>
+                        </div>
+                        <div class="number_rooms">
+                            <div class="bed_icon"></div>
+                            <p>3 Bedrooms</p>
+                        </div>
+                         <div class="number_bathrooms">
+                            <div class="bath_icon"></div>
+                            <p>2 Bathrooms</p>
+                        </div>
+                    </div>
+					<div class="user"><b>Owner:</b> Betty & John</div>
+					<div class="description">
+						Discover comfort and convenience in our charming suite
+						featuring 3 bedrooms and 2 bathrooms. Unwind in the tastefully 
+						designed living space, enjoy meals prepared in the modern kitchen,
+						and retreat to well-appointed bedrooms for restful nights.
+						Two sleek bathrooms add to the ease of your stay.
+						Located centrally, our suite is your gateway to local attractions
+						and dining. Experience a memorable getaway with us.
+					</div>
+					<div class="amenities">
+                        <h2 class="article_subtitle">Amenities</h2>
+                        <ul>
+							<li><div class="tv_icon"></div>TV</li>
 							<li><div class="wifi_icon"></div>Wifi</li>
-            </ul>
-          </div>
-          <div class="reviews">
-          <h2>3 Reviews</h2>
-            <h3>From Rick & Morty the 20th September 2013</h3>
-            <ul>
-              <li>
-                <p>
-                  Place did not have parking for my space ship, disappointed. wubba lubba dub dub!
-                </p>
-              </li>
-            </ul>
-            <h3>From Michael Jackson the 4th june 2015</h3>
-            <ul>
-              <li>
-                <p>
-                  What a beautiful suite! I had one of the best nights of my life! Hee hee.
-                </p>
-              </li>
-            </ul>
-            <h3>From Quagmire the 1st May 2018</h3>
-            <ul>
-              <li>
-                <p>
-                  Great place for a sleepover if you know what i mean (wink), giggity!
-                </p>
-              </li>
-            </ul>
-          </div>
-        </article>
-      </section>
-    </div>
-
-    <footer>
-      Best School
-    </footer>
-  </body>
+                        </ul>
+                    </div>
+                    <div class="reviews">
+                        <h2 class="article_subtitle">3 Reviews</h2>
+                        <ul>
+                            <li>
+								<div class="review_item">
+                                	<h3>From Rick & Morty the 20th September 2013</h3>
+                                	<p class="review_text">Place did not have parking for my space ship, disappointed. wubba lubba dub dub!</p>
+								</div>
+                            </li>
+                            <li>
+								<div class="review_item">
+                                	<h3>From Michael Jackson the 4th june 2015</h3>
+                                	<p class="review_text">What a beautiful suite! I had one of the best nights of my life! Hee hee.</p>
+								</div>
+                            </li>
+                            <li>
+								<div class="review_item">
+                                	<h3>From Quagmire the 1st May 2018</h3>
+                                	<p class="review_text">Great place for a sleepover if you know what i mean (wink), giggity!</p>
+								</div>
+                            </li>							
+                        </ul>
+                    </div>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<p>Best School</p>
+		</footer>
+	</body>
 </html>
